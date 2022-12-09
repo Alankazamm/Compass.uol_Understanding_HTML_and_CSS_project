@@ -2,3 +2,13 @@
     margin:0;
     padding:0;
 }
+
+ul>li a{
+    font-weight:bold;
+}
+table ~ p{
+    color:blueviolet;
+}
+h2 + p{
+    margin-top:16px;
+}
