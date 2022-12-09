@@ -12,3 +12,7 @@ table ~ p{
 h2 + p{
     margin-top:16px;
 }
+
+tbody tr:nth-child(2n+1){
+    background-color:aquamarine;
+}
