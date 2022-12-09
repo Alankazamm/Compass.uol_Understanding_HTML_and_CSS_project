@@ -12,9 +12,10 @@
     <nav id="navlist">
         <ul>
             <li><a href="#intro">Introdução</a></li>
-            <li><a href="#contato">Contato</a></li>
+            <li><a href="#info-contato">Informações de Contato</a></li>
             <li><a href="#projetos">Projetos</a></li>
             <li><a href="#exp">Experiencia</a></li>
+            <li><a href="#contate">Contate-me</a></li>
         </ul>
     </nav>
     <main style="display:flex;flex-direction:column;align-items:center;">
@@ -99,6 +100,47 @@
         </section>
 
     </main>
+    <section>
+        <form action="" method="post">
+            <fieldset id="contate">
+                <p>
+                    <legend>Seu contato:</legend>
+                    <label for="email" >E-mail</label>
+                    <input type="email" name="email" id="email" required="true">
+                </p>
+
+                <p>
+                    <label for="nome" max>Seu nome:</label>
+                    <input type="text" name="nome" id="nome" maxlength="50" autocomplete="off" required="true">  
+                </p>
+                
+                <p>
+                    <label for="telefone">Telefone (com DDD):</label>
+                    <input type="tel" name="telefone" id="telefone" pattern="[0-9]{10,11}" required="true" autocomplete="off">
+                </p>
+
+                <p>
+                    Horário preferencial para contato:
+                    <label for="horario1">Manhã</label>
+                    <input type="radio" name="horario" id="horario1"   value="manha">
+                    <label for="horario2">Tarde</label>
+                    <input type="radio" name="horario" id="horario2" value="tarde">
+                    <label for="horario3">Noite</label>
+                    <input type="radio" name="horario" id="horario3" value="noite">
+                    <button type="submit">Enviar</button>
+                </p>
+
+                <p><label for="fins">Selecione a finalidade do contato:</label>
+                    <select name="fins" id="fins">
+                        <option value="fins-opcao1">Profissional</option>
+                        <option value="fins-opcao2">Pessoal</option>
+                        <option value="fins-opcao3">Network</option>
+                    </select>
+                </p>
+
+            </fieldset>
+        </form>
+    </section>
     <footer style="text-align:center; background-color:bisque">
         <p><a href="#navlist">Voltar ao topo</a></p>
         Alan Bruno Silva de Jesus - © 2022
