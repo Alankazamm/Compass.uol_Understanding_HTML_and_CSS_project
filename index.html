@@ -8,9 +8,17 @@
         type="image/png">
 </head>
 
-<body >
+<body>
+    <nav id="navlist">
+        <ul>
+            <li><a href="#intro">Introdução</a></li>
+            <li><a href="#contato">Contato</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#exp">Experiencia</a></li>
+        </ul>
+    </nav>
     <main style="display:flex;flex-direction:column;align-items:center;">
-        <article>
+        <article id="intro">
             <h2>Introdução</h2>
             <p>Olá, meu nome é Alan, graduando em Análise e Dev. de Sistemas pela FATEC de Ourinhos. Atualmente faço
                 estágio na Compasso UOL.</p>
@@ -19,7 +27,7 @@
                     Udemy.</a></p>
         </article>
         <br><br><!-- Remover esses 'br' e editar espaçamento de margem no css-->
-        <section>
+        <section id="contato">
             <table style="border: solid 1px;">
                 <thead>
                     <tr>
@@ -53,7 +61,7 @@
             </table>
         </section>
         <br><br>
-        <aside>
+        <aside id="projetos">
             <header>Projetos</header>
             <dl>
                 <dt>Linguagens:</dt>
@@ -64,7 +72,7 @@
 
         </aside>
 
-        <section style="text-align:center; ">
+        <section style="text-align:center;" id="exp">
             <h2>Experiencias profissionais</h2>
             <table style="background-color:antiquewhite">
                 <tr>
@@ -92,6 +100,7 @@
 
     </main>
     <footer style="text-align:center; background-color:bisque">
+        <p><a href="#navlist">Voltar ao topo</a></p>
         Alan Bruno Silva de Jesus - © 2022
     </footer>
 </body>
