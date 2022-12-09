@@ -5,76 +5,148 @@
     <meta charset="UTF-8">
     <title>Portifólio do Alan</title>
     <link rel="icon" href="./imgs/vecteezy_portfolio-icon-shadowed-detailed-portfolio-logo_.png" sizes="16x16 32x32"
-        type="image/png">
+        type="image/png"> 
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
+    <nav id="navlist">
+        <ul>
+            <li><a href="#intro">Introdução</a></li>
+            <li><a href="#info-contato">Informações de Contato</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#exp">Experiencia</a></li>
+            <li><a href="#contate">Contate-me</a></li>
+        </ul>
+    </nav>
+    <main style="display:flex;flex-direction:column;align-items:center;">
+        <article id="intro">
+            <h2>Introdução</h2>
+            <p>Olá, meu nome é Alan, graduando em Análise e Dev. de Sistemas pela FATEC de Ourinhos. Atualmente faço
+                estágio na Compasso UOL.</p>
+            <p>Este portifólio está/foi feito em <em>acompanhamento </em>ao curso<a
+                    href="https://compassuol.udemy.com/course/understanding-html-and-css">"Understanding HTML & CSS" da
+                    Udemy.</a></p>
+        </article>
+        <br><br><!-- Remover esses 'br' e editar espaçamento de margem no css-->
+        <section id="contato">
+            <table style="border: solid 1px;">
+                <thead>
+                    <tr>
+                        <td colspan="2">
+                            <h3 style="text-align: center;">Informações para contato:</h3>
+                        </td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Telefone Celular:</td>
+                        <td>
+                            <address>+55 43 996310855</address>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>E-mail:</td>
+                        <td>
+                            <address>bruno.alanc61@gmail.com</address>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>LinkedIn:</td>
+                        <td>
+                            <address><a href="https://www.linkedin.com/in/alan-bruno-aa3328198/"
+                                    style="text-decoration: none;">Alan
+                                    Bruno Silva de Jesus</a></address>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <br><br>
+        <aside id="projetos">
+            <header>Projetos</header>
+            <dl>
+                <dt>Linguagens:</dt>
+                <dd>Java</dd>
+                <dd>HTML/CSS + Javascript</dd>
+                <dd>PHP</dd>
+            </dl>
 
-    <article>
-        <h2>Introdução</h2>
-        <p>Olá, meu nome é Alan, graduando em Análise e Dev. de Sistemas pela FATEC de Ourinhos. Atualmente faço
-            estágio na Compasso UOL.</p>
-        <p>Este portifólio está/foi feito em acompanhamento ao curso <a
-                href="https://compassuol.udemy.com/course/understanding-html-and-css">"Understanding HTML & CSS" da
-                Udemy.</a></p>
-    </article>
-    <br><br>
+        </aside>
+
+        <section style="text-align:center;" id="exp">
+            <h2>Experiencias profissionais</h2>
+            <table style="background-color:antiquewhite">
+                <tr>
+                    <th>Empresa</th>
+                    <th>Cargo</th>
+                </tr>
+                <tr>
+                    <td style="padding-right:12px;">Grupo 2 irmãos</td>
+                    <td style="padding-left:12px;">Assistente financeiro</td>
+                </tr>
+                <tr>
+                    <td style="padding-right:12px;">Município St. Ant° da Platina</td>
+                    <td style="padding-left:12px;">Recepcionista Un. Básica de Saúde</td>
+                </tr>
+
+            </table>
+            <blockquote>
+                <p>"Sonhos são caros e sem prazo
+                    <br> É um investimento alto"
+                </p>
+            </blockquote>
+            <p>Don L</p>
+
+        </section>
+
+    </main>
     <section>
-        <table style="border: solid 1px;">
-            <thead>
-                <tr>
-                    <td colspan="2">
-                        <h3 style="text-align: center;">Informações para contato:</h3>
-                    </td>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Telefone Celular:</td>
-                    <td>
-                        <address>+55 43 996310855</address>
-                    </td>
-                </tr>
-                <tr>
-                    <td>E-mail:</td>
-                    <td>
-                        <address>bruno.alanc61@gmail.com</address>
-                    </td>
-                </tr>
-                <tr>
-                    <td>LinkedIn:</td>
-                    <td>
-                        <address><a href="https://www.linkedin.com/in/alan-bruno-aa3328198/"
-                                style="text-decoration: none;">Alan
-                                Bruno Silva de Jesus</a></address>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+        <form action="" method="post">
+            <fieldset id="contate">
+                <p>
+                    <legend>Seu contato:</legend>
+                    <label for="email" >E-mail</label>
+                    <input type="email" name="email" id="email" required="true">
+                </p>
+
+                <p>
+                    <label for="nome" max>Seu nome:</label>
+                    <input type="text" name="nome" id="nome" maxlength="50" autocomplete="off" required="true">  
+                </p>
+                
+                <p>
+                    <label for="telefone">Telefone (com DDD):</label>
+                    <input type="tel" name="telefone" id="telefone" pattern="[0-9]{10,11}" required="true" autocomplete="off">
+                </p>
+
+                <p>
+                    Horário preferencial para contato:
+                    <label for="horario1">Manhã</label>
+                    <input type="radio" name="horario" id="horario1"   value="manha">
+                    <label for="horario2">Tarde</label>
+                    <input type="radio" name="horario" id="horario2" value="tarde">
+                    <label for="horario3">Noite</label>
+                    <input type="radio" name="horario" id="horario3" value="noite">
+                    
+                </p>
+
+                <p><label for="fins">Selecione a finalidade do contato:</label>
+                    <select name="fins" id="fins">
+                        <option value="fins-opcao1">Profissional</option>
+                        <option value="fins-opcao2">Pessoal</option>
+                        <option value="fins-opcao3">Network</option>
+                    </select>
+                </p>
+                <p><button type="submit">Enviar</button></p>
+            </fieldset>
+        </form>
     </section>
-
-    <aside>
-        <header>Projetos</header>
-        <dl>
-            <dt>Linguagens:</dt>
-            <dd>Java</dd>
-            <dd>HTML/CSS + Javascript</dd>
-            <dd>PHP</dd>          
-        </dl>
-
-    </aside>
-
-    <section>
-        <blockquote>
-            <p>"Sonhos são caros e sem prazo
-                <br> É um investimento alto"
-            </p>
-        </blockquote>
-        <p>Don L</p>
-        <h2>Sobre mim</h2>
-    </section>
-
-
+    <footer style="text-align:center; background-color:bisque">
+        <p><a href="#navlist">Voltar ao topo</a></p>
+        Alan Bruno Silva de Jesus - © 2022
+    </footer>
 </body>
 
 </html>
